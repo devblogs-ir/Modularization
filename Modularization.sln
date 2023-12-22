@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sources", "sources", "{50A90E85-013F-4F24-8A7E-6405D7721AC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reza Kharaei", "Reza Kharaei", "{1499AE39-F5C0-4801-A0BB-6B1372469AD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Design.Cohesion", "sources\Reza Kharaei\Design.Cohesion\Design.Cohesion.csproj", "{C9D59240-3102-4B68-8969-1C5CFDCAF168}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Design.Coupling", "sources\Reza Kharaei\Design.Coupling\Design.Coupling.csproj", "{EA103069-4EBE-492D-B31E-0FA0ACECF088}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9D59240-3102-4B68-8969-1C5CFDCAF168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D59240-3102-4B68-8969-1C5CFDCAF168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D59240-3102-4B68-8969-1C5CFDCAF168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D59240-3102-4B68-8969-1C5CFDCAF168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA103069-4EBE-492D-B31E-0FA0ACECF088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA103069-4EBE-492D-B31E-0FA0ACECF088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA103069-4EBE-492D-B31E-0FA0ACECF088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA103069-4EBE-492D-B31E-0FA0ACECF088}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1499AE39-F5C0-4801-A0BB-6B1372469AD3} = {50A90E85-013F-4F24-8A7E-6405D7721AC2}
+		{C9D59240-3102-4B68-8969-1C5CFDCAF168} = {1499AE39-F5C0-4801-A0BB-6B1372469AD3}
+		{EA103069-4EBE-492D-B31E-0FA0ACECF088} = {1499AE39-F5C0-4801-A0BB-6B1372469AD3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1B49EB0-C9BE-4992-9CE1-9876B59C5615}
+	EndGlobalSection
+EndGlobal

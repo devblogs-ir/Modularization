@@ -8,3 +8,4 @@ hi,
 4. Added DataCoupling class
 5. Added StampCoupling class
 6. Added ControlCoupling class
+7. Added ExternalCoupling class

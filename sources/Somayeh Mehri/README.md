@@ -7,3 +7,4 @@ hi,
     dotnet sln add Design.Cohesion
 4. Added DataCoupling class
 5. Added StampCoupling class
+6. Added ControlCoupling class

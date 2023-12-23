@@ -6,11 +6,11 @@ namespace Design.Coupling.ControlCoupling;
     It is recommended to check the third file (StampCoupling.cs) before reading this file 
 */
 
-public record NotificationData(string strType, string Title, string Message, string strEmailAddress, string strMobileNumber);
+public record NotificationDto(string strType, string Title, string Message, string strEmailAddress, string strMobileNumber);
 
 public class NotificationService
 {
-    public void SendNotification(NotificationData request)
+    public void SendNotification(NotificationDto request)
     {
         switch (request.strType)
         {
@@ -38,7 +38,7 @@ public class NotificationController(NotificationService notificationService)
         // 1. Do something....
 
         // 2. Send notification
-        var requestData = new NotificationData("sms", "my title", "sample message", "none@domain.com", "09119314956");
+        var requestData = new NotificationDto("sms", "my title", "sample message", "none@domain.com", "09119314956");
         _notificationService.SendNotification(requestData);
     }
 }

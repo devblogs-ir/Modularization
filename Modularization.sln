@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "reza-pourabbasi", "reza-pou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Design.Coupling", "sources\reza-pourabbasi\Design.Coupling\Design.Coupling.csproj", "{3B032561-0A50-445E-9209-02B169D6D9CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arvin-Mashayekhi", "Arvin-Mashayekhi", "{76E1ED13-AC18-45EF-B135-292B67DA1D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design.Coupling", "Design.Coupling\Design.Coupling.csproj", "{ACF2606D-A122-4C7B-A81D-D73F0F25EB6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,10 @@ Global
 		{3B032561-0A50-445E-9209-02B169D6D9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B032561-0A50-445E-9209-02B169D6D9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B032561-0A50-445E-9209-02B169D6D9CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF2606D-A122-4C7B-A81D-D73F0F25EB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF2606D-A122-4C7B-A81D-D73F0F25EB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF2606D-A122-4C7B-A81D-D73F0F25EB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF2606D-A122-4C7B-A81D-D73F0F25EB6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4F73A06C-9150-4047-A369-BE991E4678E4} = {5AE9ED42-426A-445C-B42A-0D1AD67A2866}
 		{3B032561-0A50-445E-9209-02B169D6D9CD} = {4F73A06C-9150-4047-A369-BE991E4678E4}
+		{76E1ED13-AC18-45EF-B135-292B67DA1D87} = {5AE9ED42-426A-445C-B42A-0D1AD67A2866}
+		{ACF2606D-A122-4C7B-A81D-D73F0F25EB6D} = {76E1ED13-AC18-45EF-B135-292B67DA1D87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48115E36-02F4-4419-B700-19A03DEA98DC}

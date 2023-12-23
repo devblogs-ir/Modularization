@@ -9,3 +9,4 @@ hi,
 5. Added StampCoupling class
 6. Added ControlCoupling class
 7. Added ExternalCoupling class
+8. Added CommonCoupling class

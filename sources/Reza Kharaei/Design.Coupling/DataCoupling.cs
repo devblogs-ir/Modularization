@@ -1,4 +1,4 @@
-namespace Design.Coupling;
+namespace Design.Coupling.DataCoupling;
 
 /* 
     Description: 
@@ -6,7 +6,7 @@ namespace Design.Coupling;
     It is recommended to check the first file (NoCoupling.cs) before reading this file 
 */
 
-public class NotificationService_ForDataCoupling
+public class NotificationService
 {
     public void SendEmail(string Title, string Message, string strEmailAddress)
     {
@@ -20,9 +20,9 @@ public class NotificationService_ForDataCoupling
 }
 
 
-public class NotificationController(NotificationService_ForDataCoupling notificationService)
+public class NotificationController(NotificationService notificationService)
 {
-    private readonly NotificationService_ForDataCoupling _notificationService = notificationService;
+    private readonly NotificationService _notificationService = notificationService;
 
     public void PostAction()
     {

@@ -1,11 +1,11 @@
-﻿namespace Design.Coupling;
+﻿namespace Design.Coupling.NoCoupling;
 
 /* 
     Description: 
     this is First File 
 */
 
-public class NotificationService_ForNoCoupling
+public class NotificationService
 {
     public void SendEmail(string Title, string Message, string strEmailAddress)
     {

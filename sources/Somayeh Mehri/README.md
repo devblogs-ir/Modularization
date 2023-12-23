@@ -10,3 +10,4 @@ hi,
 6. Added ControlCoupling class
 7. Added ExternalCoupling class
 8. Added CommonCoupling class
+9. Added ContentCoupling class

@@ -6,3 +6,4 @@ hi,
      dotnet new classlib -n Design.Coupling
     dotnet sln add Design.Cohesion
 4. Added DataCoupling class
+5. Added StampCoupling class

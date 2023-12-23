@@ -20,6 +20,9 @@ namespace Coupling.ContentCoupling
         public Order GetSpecialOrders(int someValue)
         {
             var user = _userService.GetUserWithSomeSpecification();
+
+            _userService.SetSomeUserData("some information");
+
             return new Order { Id = someValue, User = user };
         }
 
@@ -28,10 +31,16 @@ namespace Coupling.ContentCoupling
 
     public class UserService
     {
-
+        private User _user;
         public UserService()
         {
+            _user = new User();
         }
+        public void SetSomeUserData(string data)
+        {
+            _user.SomeUserData = data;
+        }
+
         public User GetUserById(int userId)
         {
             return new User() { Id = 1 };

@@ -4,25 +4,21 @@ namespace Cohesion.CommunicationalCohesion
 {
     public class MusicPlayer
     {
-        public Song GetSongInfo(string songId)
+        public void SetVolume(int volumeLevel)
         {
-            // Logic to retrieve information about the specified song
-            return new Song();  
+            // Logic to set the volume to the specified level
         }
 
-        public void UpdateSongRating(string songId, string artistName)
+        public void SetEqualizer(string equalizerPreset)
         {
-            // Logic to update artist name of the specified song
-            Song song = GetSongInfo(songId);
-            song.SongName = artistName;
+            // Logic to apply the specified equalizer preset
+        }
+
+        public void Mute()
+        {
+            // Logic to mute the audio
         }
     }
 
-    public class Song
-    {
-        public int Id { get; set; }
-        public string SongName { get; set; }
-        public string Artist { get; set; }
-    }
 
 }

@@ -9,13 +9,16 @@ namespace Coupling.StampCoupling
     public class OrderService
     {
         private UserService _userService;
-        public OrderService(UserService userService)
+        public OrderService()
         {
-            _userService = userService;
+            
         }
 
-        public Order GetLastOrderByUser(GetUserDto userDto)
+        public Order GetLastOrderByUser()
         {
+            var userDto = new GetUserDto() { Id = 1 };
+            
+            //changes in userDto structure can cause runtime errors
             var user = _userService.GetUserById(userDto);
 
             return new Order { Id = 100, User = user };

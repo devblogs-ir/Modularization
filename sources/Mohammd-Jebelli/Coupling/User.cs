@@ -10,5 +10,6 @@ namespace Coupling
     {
         public int Id { get; set; }
         public string UserName { get; set; }
+        public string SomeUserData { get; set; }
     }
 }

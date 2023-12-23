@@ -16,14 +16,14 @@ public class Order
 {
     private Customer _customer;
     private decimal _amount;
-    public Order(Customer customer,decimal totalAmount)
+    public Order(Customer customer,decimal amount)
     {
         _customer=customer;
-        _amount=totalAmount;
+        _amount=amount;
 
     }
 
-    public Customer GetCustumer()
+    public Customer GetCustomer()
     {
         return _customer;
     }

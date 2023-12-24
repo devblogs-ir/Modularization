@@ -3,12 +3,14 @@ public class User
 {
     public string Name { get; set; }
     public byte Age { get; set; }
+    public DateOnly BirthDate { get; set; }
     private Guid GuId { get; set; }
 
-    public User(string name, byte age)
+    public User(string name, byte age,DateOnly birthDate)
     {
         Name = name;
         Age = age;
+        BirthDate = birthDate;
         GuId = Guid.NewGuid();
     }
 

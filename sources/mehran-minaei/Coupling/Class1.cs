@@ -1,4 +1,4 @@
-﻿namespace Cohesion;
+﻿namespace Coupling;
 
 public class Class1
 {

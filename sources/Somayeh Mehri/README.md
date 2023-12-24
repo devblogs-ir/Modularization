@@ -16,3 +16,4 @@ hi,
 12. Added CommunicationCohesion
 13. Added ProceduralCohesion
 14. Added CoincidentalCohesion
+15. Added LogicalCohesion

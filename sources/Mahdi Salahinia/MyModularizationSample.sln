@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design.Cohesion", "Design.Cohesion\Design.Cohesion.csproj", "{63C6E8CB-9C1B-408D-8A0A-ECB3B83A6C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design.Coupling", "Design.Coupling\Design.Coupling.csproj", "{3BC6F461-BE88-43A0-83E2-233FE112F5F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C6E8CB-9C1B-408D-8A0A-ECB3B83A6C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C6E8CB-9C1B-408D-8A0A-ECB3B83A6C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C6E8CB-9C1B-408D-8A0A-ECB3B83A6C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C6E8CB-9C1B-408D-8A0A-ECB3B83A6C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC6F461-BE88-43A0-83E2-233FE112F5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC6F461-BE88-43A0-83E2-233FE112F5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC6F461-BE88-43A0-83E2-233FE112F5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC6F461-BE88-43A0-83E2-233FE112F5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

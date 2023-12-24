@@ -13,4 +13,5 @@ hi,
 9. Added ContentCoupling class
 10. Added FunctionCohesion class
 11.Added SequentialCohesion
-12. Added CommunicationCohesion 
+12. Added CommunicationCohesion
+13. Added ProceduralCohesion

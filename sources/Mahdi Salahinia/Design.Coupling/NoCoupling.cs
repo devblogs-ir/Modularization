@@ -1,6 +1,6 @@
 ﻿using Dumpify;
 
-namespace Design.Cohesion;
+namespace Design.Coupling;
 
 public class NoCoupling
 {

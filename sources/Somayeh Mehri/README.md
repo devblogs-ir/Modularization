@@ -17,3 +17,4 @@ hi,
 13. Added ProceduralCohesion
 14. Added CoincidentalCohesion
 15. Added LogicalCohesion
+16. Added TemporalCohesion

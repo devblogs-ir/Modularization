@@ -3,7 +3,7 @@ namespace Design.Cohesion.SequentialCohesion;
 /* 
     Description: 
     this is second File.
-    It is recommended to check the first file (SequentialCohesion.cs) before reading this file 
+    It is recommended to check the first file (FunctionalCohesion.cs) before reading this file 
 */
 
 
@@ -33,7 +33,7 @@ public class UserService
         user.Password = request.Password;
         user.Mobile = request.Mobile;
 
-        // 2. Save changes in database
+        // 2. Save changes in database 
     }
 
     public void SendNotification(string strMobileNumber, string NotificationText)
@@ -48,13 +48,11 @@ public class UserService
             throw new Exception("User not found!");
 
         var newRequest = new UserDto(entity.FullName, newPassword, entity.Mobile);
-        await UpdateInfo(entity, newRequest);
-
-        SendNotification(entity.Mobile, "your password changed!");
+        await UpdateInfo(entity, newRequest); 
     }
 }
 
 /*
     Description: 
-    The output of the ChangePassword method is the input of the UpdateInfo method.
+    The output of the FindUserByUsername method is the input of the UpdateInfo method.
 */

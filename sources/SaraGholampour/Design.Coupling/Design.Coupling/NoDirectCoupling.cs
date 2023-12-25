@@ -1,4 +1,5 @@
 ﻿namespace Design.Coupling;
+
 public class User
 {
     public string Name { get; set; }
@@ -6,7 +7,7 @@ public class User
     public DateOnly BirthDate { get; set; }
     private Guid GuId { get; set; }
 
-    public User(string name, byte age,DateOnly birthDate)
+    public User(string name, byte age, DateOnly birthDate)
     {
         Name = name;
         Age = age;
@@ -18,9 +19,18 @@ public class User
     {
         users = users.Where(user => user.GuId != id).ToArray();
     }
+
+    public void UpdateUser(List<User> users, User newUser, Guid Id)
+    {
+        var index = users.FindIndex(user => user.GuId == Id);
+        users[index] = newUser;
+    }
 }
 
 public class NoDirectCoupling
 {
-    
+    static void Main(string[] args)
+    {
+        
+    }
 }

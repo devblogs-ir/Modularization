@@ -1,4 +1,5 @@
-﻿namespace Design.Coupling;
+﻿using System.Runtime;
+namespace Design.Coupling;
 
 public class Company
 {

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design.Cohision", "Design.Cohision\Design.Cohision.csproj", "{04115C2A-01F6-46DF-ADE2-DC856A141FEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04115C2A-01F6-46DF-ADE2-DC856A141FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04115C2A-01F6-46DF-ADE2-DC856A141FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04115C2A-01F6-46DF-ADE2-DC856A141FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04115C2A-01F6-46DF-ADE2-DC856A141FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

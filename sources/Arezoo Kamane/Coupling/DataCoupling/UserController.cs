@@ -1,7 +1,7 @@
 ﻿
 namespace Coupling.DataCoupling
 {
-    public class UserController 
+    public class UserController
     {
         private readonly UserService userService;
 

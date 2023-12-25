@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Coupling.DataCoupling
+﻿namespace Coupling.DataCoupling
 {
     public class UserDto
     {
@@ -16,6 +10,6 @@ namespace Coupling.DataCoupling
         {
             return $"User Information - ID: {UserId}, Name: {UserName}, Email: {Email}";
         }
-        
+
     }
 }

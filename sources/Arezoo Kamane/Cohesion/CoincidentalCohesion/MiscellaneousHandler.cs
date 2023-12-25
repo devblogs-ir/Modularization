@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Cohesion.CoincidentalCohesion
+﻿namespace Cohesion.CoincidentalCohesion
 {
-    public class MiscellaneousHandler 
+    public class MiscellaneousHandler
     {
         private List<UserDto> users;
 
@@ -41,6 +35,6 @@ namespace Cohesion.CoincidentalCohesion
             return systemConfig;
         }
 
-    
+
     }
 }

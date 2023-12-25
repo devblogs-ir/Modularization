@@ -4,7 +4,7 @@ namespace Coupling.DataCoupling
 {
     public class UserService
     {
-        private readonly List<UserDto> users; 
+        private readonly List<UserDto> users;
 
         public UserService()
         {

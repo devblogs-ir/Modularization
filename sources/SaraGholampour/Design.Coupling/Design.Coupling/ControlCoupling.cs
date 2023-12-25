@@ -20,6 +20,6 @@ public class ControlCoupling
     public static void Main(string[] args)
     {
         Company DigiKala = new();
-        DigiKala.AddUserToCompany(new User("sara",20,new DateOnly()),false);
+        DigiKala.AddUserToCompany(new User("sara",20,new DateOnly(),null),false);
     }
 }

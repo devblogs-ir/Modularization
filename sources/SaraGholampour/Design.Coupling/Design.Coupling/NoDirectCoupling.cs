@@ -6,13 +6,15 @@ public class User
     public byte Age { get; set; }
     public DateOnly BirthDate { get; set; }
     private Guid GuId { get; set; }
+    private string? ImageUrl { get; set; }
 
-    public User(string name, byte age, DateOnly birthDate)
+    public User(string name, byte age, DateOnly birthDate,string? imageUrl)
     {
         Name = name;
         Age = age;
         BirthDate = birthDate;
         GuId = Guid.NewGuid();
+        ImageUrl = imageUrl;
     }
 
     public void DeleteUser(User[] users, Guid id)
@@ -24,6 +26,16 @@ public class User
     {
         var index = users.FindIndex(user => user.GuId == Id);
         users[index] = newUser;
+    }
+
+    public void HangleImageUrl()
+    {
+       var answer= Console.ReadLine();
+       // ---or read from file------
+       // -----------
+       // -----
+       // some changes----
+       // return ------
     }
 }
 

@@ -5,7 +5,7 @@ public class Student : User
 {
     public string Grade { get; set; }
 
-    public Student(string name, byte age, string grade,DateOnly birthDate) : base(name, age,birthDate)
+    public Student(string name, byte age, string grade,DateOnly birthDate) : base(name, age,birthDate,null)
     {
         Grade = grade;
     }

@@ -49,9 +49,9 @@ public class StampCoupling
         
         Product[] storeProducts =
         {
-            new Product("me before u", ECategory.Book, 150000, new User("Ali", 25, new DateOnly())),
-            new Product("knife", ECategory.KitchenAppliances, 950000, new User("sasan", 25, new DateOnly())),
-            new Product("doll", ECategory.Toy, 9630000, new User("samira", 30, new DateOnly()))
+            new Product("me before u", ECategory.Book, 150000, new User("Ali", 25, new DateOnly(),null)),
+            new Product("knife", ECategory.KitchenAppliances, 950000, new User("sasan", 25, new DateOnly(),null)),
+            new Product("doll", ECategory.Toy, 9630000, new User("samira", 30, new DateOnly(),null))
         };
         product.totalBill(storeProducts);
 

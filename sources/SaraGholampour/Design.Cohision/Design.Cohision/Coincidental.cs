@@ -18,4 +18,9 @@ public class Coincidental
     {
         return new DateOnly();
     }
+
+    public bool ValidateUser()
+    {
+        return false;}
+    public void GetUser(){}
 }

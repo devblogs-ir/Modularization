@@ -3,18 +3,18 @@
     public class UserRegistrationModule
     {
 
-        private readonly UserRepository userRepository;
+        private readonly UserRepository _userRepository;
 
         public UserRegistrationModule(UserRepository userRepository)
         {
-            this.userRepository = userRepository;
+            this._userRepository = userRepository;
         }
 
         public void RegisterUser(UserRecord user)
         {
             Console.WriteLine($"Registering user - UserName: {user.UserName}, Email: {user.Email}, Registration Date: {user.RegistrationDate}");
 
-            userRepository.AddUser(user);
+            _userRepository.AddUser(user);
 
             Console.WriteLine("User registration successful.");
         }

@@ -2,22 +2,22 @@
 {
     public class UserRegistration
     {
-        private IUserRegistrationStrategy registrationStrategy;
+        private IUserRegistrationStrategy _registrationStrategy;
 
         public void SetRegistrationStrategy(IUserRegistrationStrategy strategy)
         {
-            this.registrationStrategy = strategy;
+            this._registrationStrategy = strategy;
         }
 
         public void ProcessRegistration(string userName)
         {
-            if (registrationStrategy == null)
+            if (_registrationStrategy == null)
             {
                 Console.WriteLine("No registration strategy set. Cannot process registration.");
                 return;
             }
 
-            registrationStrategy.RegisterUser(userName);
+            _registrationStrategy.RegisterUser(userName);
         }
     }
 }

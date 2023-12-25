@@ -2,19 +2,19 @@
 {
     public class UserStateMachine
     {
-        private UserState currentState;
+        private UserState _currentState;
 
         public UserStateMachine()
         {
-            currentState = UserState.Registered;
+            _currentState = UserState.Registered;
         }
 
         public void VerifyEmail()
         {
-            if (currentState == UserState.Registered)
+            if (_currentState == UserState.Registered)
             {
                 Console.WriteLine("Email verification successful.");
-                currentState = UserState.EmailVerified;
+                _currentState = UserState.EmailVerified;
             }
             else
             {
@@ -24,10 +24,10 @@
 
         public void ActivateAccount()
         {
-            if (currentState == UserState.EmailVerified)
+            if (_currentState == UserState.EmailVerified)
             {
                 Console.WriteLine("Account activation successful. User is now active.");
-                currentState = UserState.Active;
+                _currentState = UserState.Active;
             }
             else
             {
@@ -37,7 +37,7 @@
 
         public UserState GetCurrentState()
         {
-            return currentState;
+            return _currentState;
         }
     }
 }

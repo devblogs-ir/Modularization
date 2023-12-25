@@ -2,21 +2,21 @@
 {
     public class UserManager
     {
-        private List<User> users;
+        private List<User> _users;
 
         public UserManager()
         {
-            users = new List<User>();
+            _users = new List<User>();
         }
 
         public void AddUser(User user)
         {
-            users.Add(user);
+            _users.Add(user);
         }
 
         public void DisplayUsers()
         {
-            foreach (var user in users)
+            foreach (var user in _users)
             {
                 user.PrintUserInfo();
             }

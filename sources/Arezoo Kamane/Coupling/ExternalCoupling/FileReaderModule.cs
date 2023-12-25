@@ -3,24 +3,24 @@ namespace Coupling.ExternalCoupling
 {
     public class FileReaderModule
     {
-        private readonly string filePath;
+        private readonly string _filePath;
 
         public FileReaderModule(string filePath)
         {
-            this.filePath = filePath;
+            this._filePath = filePath;
         }
 
         public void ReadFile()
         {
             try
             {
-                if (!File.Exists(filePath))
+                if (!File.Exists(_filePath))
                 {
-                    Console.WriteLine($"File not found at path: {filePath}");
+                    Console.WriteLine($"File not found at path: {_filePath}");
                     return;
                 }
 
-                string fileContents = File.ReadAllText(filePath);
+                string fileContents = File.ReadAllText(_filePath);
 
                 Console.WriteLine($"File Contents: {fileContents}");
 

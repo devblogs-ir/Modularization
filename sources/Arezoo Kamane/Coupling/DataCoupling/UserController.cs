@@ -3,16 +3,16 @@ namespace Coupling.DataCoupling
 {
     public class UserController
     {
-        private readonly UserService userService;
+        private readonly UserService _userService;
 
         public UserController(UserService userService)
         {
-            this.userService = userService;
+            this._userService = userService;
         }
 
         public void PrintUser(int userId)
         {
-            UserDto? user = userService.GetUserById(userId);
+            UserDto? user = _userService.GetUserById(userId);
 
             if (user != null)
             {
@@ -26,7 +26,7 @@ namespace Coupling.DataCoupling
 
         public void PrintAllUser()
         {
-            List<UserDto> allUsers = userService.GetAllUsers();
+            List<UserDto> allUsers = _userService.GetAllUsers();
 
             Console.WriteLine("All Users:");
             foreach (var user in allUsers)

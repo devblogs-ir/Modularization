@@ -3,24 +3,24 @@
     public class UserValidationModule
     {
 
-        private readonly UserRepository userRepository;
+        private readonly UserRepository _userRepository;
 
         public UserValidationModule(UserRepository userRepository)
         {
-            this.userRepository = userRepository;
+            this._userRepository = userRepository;
         }
 
         public bool ValidateUser(UserRecord user)
         {
             Console.WriteLine($"Validating user - UserName: {user.UserName}, Email: {user.Email}");
 
-            if (!userRepository.IsUserNameUnique(user.UserName))
+            if (!_userRepository.IsUserNameUnique(user.UserName))
             {
                 Console.WriteLine($"Username '{user.UserName}' is not unique. Validation failed.");
                 return false;
             }
 
-            if (!userRepository.IsEmailUnique(user.Email))
+            if (!_userRepository.IsEmailUnique(user.Email))
             {
                 Console.WriteLine($"Email '{user.Email}' is not unique. Validation failed.");
                 return false;

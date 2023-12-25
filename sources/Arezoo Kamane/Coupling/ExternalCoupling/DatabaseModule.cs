@@ -4,18 +4,18 @@ namespace Coupling.ExternalCoupling
 {
     public class DatabaseModule
     {
-        private readonly string connectionString;
+        private readonly string _connectionString;
 
         public DatabaseModule(string connectionString)
         {
-            this.connectionString = connectionString;
+            this._connectionString = connectionString;
         }
 
         public string? GetUserNameById(int userId)
         {
             string? userName = null;
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
 

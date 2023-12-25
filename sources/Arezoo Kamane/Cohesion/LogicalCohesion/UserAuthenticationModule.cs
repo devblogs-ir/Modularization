@@ -3,11 +3,11 @@
     public class UserAuthenticationModule
     {
 
-        private readonly List<User> registeredUsers;
+        private readonly List<User> _registeredUsers;
 
         public UserAuthenticationModule()
         {
-            registeredUsers = new List<User>
+            _registeredUsers = new List<User>
             {
                 new User { Username = "arezoo", Password = "pass123" },
             };
@@ -16,7 +16,7 @@
         public User AuthenticateUser(string username, string password)
         {
             Console.WriteLine("Task: Authenticate User");
-            User user = registeredUsers.FirstOrDefault(u => u.Username == username && u.Password == password);
+            User user = _registeredUsers.FirstOrDefault(u => u.Username == username && u.Password == password);
 
             if (user != null)
             {

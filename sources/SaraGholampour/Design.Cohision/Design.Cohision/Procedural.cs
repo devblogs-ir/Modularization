@@ -5,7 +5,7 @@ public class User
     public string Name { get; set; }
     public DateOnly BirthDate { get; set; }
     public string NationalCode { get; set; }
-    public Guid Id { get; set; }
+    public Guid? Id { get; set; }
 
     public User(string name, DateOnly birthDate, string nationalCode)
     {

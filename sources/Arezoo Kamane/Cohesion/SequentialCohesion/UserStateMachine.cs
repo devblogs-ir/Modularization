@@ -35,9 +35,7 @@
             }
         }
 
-        public UserState GetCurrentState()
-        {
-            return _currentState;
-        }
+        public UserState GetCurrentState() => _currentState;
+        
     }
 }

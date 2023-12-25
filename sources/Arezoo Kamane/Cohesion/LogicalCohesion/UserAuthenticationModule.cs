@@ -1,5 +1,6 @@
-﻿namespace Cohesion.LogicalCohesion
-{
+﻿
+namespace Cohesion.LogicalCohesion;
+
     public class UserAuthenticationModule
     {
 
@@ -9,26 +10,27 @@
         {
             _registeredUsers = new List<User>
             {
-                new User { Username = "arezoo", Password = "pass123" },
-            };
+                new User { Username = "arezoo", Password = "pass123" }
+            }
+            ;
         }
 
         public User AuthenticateUser(string username, string password)
         {
             Console.WriteLine("Task: Authenticate User");
-            User user = _registeredUsers.FirstOrDefault(u => u.Username == username && u.Password == password);
 
-            if (user != null)
+            if (_registeredUsers.FirstOrDefault(u => u.Username == username && u.Password == password) is User user)
             {
                 user.IsAuthenticated = true;
                 Console.WriteLine($"User '{username}' authenticated successfully.\n");
+                return user;
             }
             else
             {
                 Console.WriteLine($"Authentication failed for user '{username}'.\n");
+                return null;
             }
 
-            return user;
         }
 
         public void LogoutUser(User user)
@@ -59,4 +61,4 @@
             }
         }
     }
-}
+

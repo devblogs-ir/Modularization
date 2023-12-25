@@ -6,12 +6,9 @@ public class CommonCoupling
 {
     public void ChangeTax()
     {
-        
+        Product.TaxPercentage = 10;
     }
-    public static void Main(string[] args)
-    {
-        
-    }
+   
     
     
 }

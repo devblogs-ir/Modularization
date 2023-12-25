@@ -2,7 +2,8 @@
 
 namespace Design.Coupling;
 
-public enum ECategory {
+public enum ECategory
+{
     Stationery,
     Toy,
     HomeAppliances,
@@ -11,7 +12,6 @@ public enum ECategory {
     Beauty,
     Tools,
     Book
-        
 }
 
 public class Product
@@ -21,7 +21,10 @@ public class Product
     public uint Price { get; set; }
     public User Seller { get; set; }
     public Guid GuId { get; set; }
-    
+
+    public Product()
+    {
+    }
 
     public Product(string title, ECategory category, uint price, User seller)
     {
@@ -38,16 +41,19 @@ public class Product
     }
 }
 
-
 public class StampCoupling
 {
-    private Product[] storeProducts =
+    public static void Main(string[] args)
     {
-        new Product("me before u", ECategory.Book, 150000, new User("Ali", 25, new DateOnly())),
-        new Product("knife", ECategory.KitchenAppliances, 950000, new User("sasan", 25, new DateOnly())),
-        new Product("doll", ECategory.Toy, 9630000, new User("samira", 30, new DateOnly()))
-    };
-    
-    
+        Product product = new();
+        
+        Product[] storeProducts =
+        {
+            new Product("me before u", ECategory.Book, 150000, new User("Ali", 25, new DateOnly())),
+            new Product("knife", ECategory.KitchenAppliances, 950000, new User("sasan", 25, new DateOnly())),
+            new Product("doll", ECategory.Toy, 9630000, new User("samira", 30, new DateOnly()))
+        };
+        product.totalBill(storeProducts);
 
+    }
 }

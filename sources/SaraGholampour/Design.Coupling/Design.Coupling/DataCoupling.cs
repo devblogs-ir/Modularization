@@ -15,5 +15,8 @@ public class Student : User
 
 public class DataCoupling
 {
-    private Student sara = new Student("sara", 20, "3",new DateOnly(2000, 10, 21));
+    static void Main(string[] args)
+    {
+        Student sara = new Student("sara", 20, "3",new DateOnly(2000, 10, 21));
+    }
 }

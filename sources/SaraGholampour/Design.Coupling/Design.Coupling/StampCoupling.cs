@@ -21,6 +21,7 @@ public class Product
     public uint Price { get; set; }
     public User Seller { get; set; }
     public Guid GuId { get; set; }
+    public static ushort TaxPercentage { get; set; } = 9;
 
     public Product()
     {
@@ -37,7 +38,8 @@ public class Product
 
     public long totalBill(Product[] myBillItems)
     {
-        return myBillItems.Sum(node => node.Price);
+        var sum= myBillItems.Sum(node => node.Price);
+        return sum + (9 * sum / 100);
     }
 }
 

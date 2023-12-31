@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modularization.Cohesion", "Modularization.Cohesion\Modularization.Cohesion.csproj", "{C0E14DBA-2B66-4DE1-8EB2-EDD8F52D60F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modularization.Coupling", "Modularization.Coupling\Modularization.Coupling.csproj", "{7E1BC89D-945B-4CA8-9335-041916521BD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0E14DBA-2B66-4DE1-8EB2-EDD8F52D60F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E14DBA-2B66-4DE1-8EB2-EDD8F52D60F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E14DBA-2B66-4DE1-8EB2-EDD8F52D60F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E14DBA-2B66-4DE1-8EB2-EDD8F52D60F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1BC89D-945B-4CA8-9335-041916521BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1BC89D-945B-4CA8-9335-041916521BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1BC89D-945B-4CA8-9335-041916521BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1BC89D-945B-4CA8-9335-041916521BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9109F2A-B353-4E3A-B640-486B87CAB6E5}
+	EndGlobalSection
+EndGlobal
